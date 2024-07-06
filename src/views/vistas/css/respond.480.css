@@ -1,0 +1,70 @@
+@media screen 
+and (min-width: 480px) 
+and (max-width: 767px) 
+{
+	#asideLateral
+	{
+		width: 90%;
+	}
+	#asideTop div
+	{
+		width: 100%;
+	}
+	#home
+	{
+		width: 100%;
+	}
+	#logo
+	{
+		width: 100%;
+	}
+	#logo img
+	{
+		margin-left: 8em;
+	}
+	#nav li
+	{
+		width: 100%;
+		text-align: left;
+		border-bottom: 1px solid #333;
+	}
+	#nav li:last-child
+	{
+		border: none;
+	}
+	#nav a
+	{
+		border: none;
+		width: 100%;
+		line-height: 3em;
+	}
+	#nav a:hover
+	{
+		background: none;
+	}
+	#panel figcaption
+	{
+		width: 70%;
+	}
+	#titulo
+	{
+		width: 100%;
+		padding-top: 1em !important;
+	}
+	#titulo h1
+	{
+		font-size: 1.5em;
+		text-align: center;
+	}
+	.imgInv, .tablaInv
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.inversor p
+	{
+		margin: 1em 0;
+		text-align: left;
+		font-size: 0.9em;
+	}
+}

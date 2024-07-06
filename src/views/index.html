@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Fábrica de inversores convertidores para energía solar, trabajo continuo, uso rudo; Salida regulada 120 y 220 vca. Asesoría para instalación."
+    />
+    <meta
+      name="author"
+      content="JESUS SANDOVAL, EMMANUEL CANALES, GERARDO AMADOR"
+    />
+    <title>INVERCOM México|inversor convertidor de corriente a voltaje</title>
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+
+    <link href="vistas/css/general.css" rel="stylesheet" />
+    <link href="vistas/css/navbar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vistas/css/modal.css" />
+    <!-- <link href="vistas/css/respond.1024.css" rel="stylesheet" />
+    <link href="vistas/css/respond.768.css" rel="stylesheet" />
+    <link href="vistas/css/respond.480.css" rel="stylesheet" />
+    <link href="vistas/css/respond.320.css" rel="stylesheet" /> -->
+
+    <script src="control/js/modernizr.js"></script>
+    <script src="control/js/prefixfree.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="control/js/User.js"></script>
+    <script src="control/js/funciones_index.js"></script>
+    <script src="control/js/dinamic.js"></script>
+    <script src="control/js/navbar.js"></script>
+    <script src="control/js/verificarsesion.js"></script>
+
+    <script>
+      $(document).on("ready", enlaces);
+      function enlaces() {
+        $(".enlace").on("click", function (event) {
+          event.preventDefault();
+          var pagina = $(this).attr("href");
+          window.open(
+            pagina,
+            "",
+            "scrollbars=yes,width=800,height=700,top=50,left=200"
+          );
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="mainHome">
+      <header id="header">
+        <div id="logo">
+          <img
+            src="vistas/extras/img/logotipo.png"
+            alt="logo Invercom"
+            title="Invercom: Fabrica de Inversores Electronicos"
+            height="96"
+            width="180"
+          />
+        </div>
+        <div id="titulo">
+          <h1>Fabricante de Inversores Electrónicos</h1>
+        </div>
+      </header>
+      <nav id="main-navbar"></nav>
+
+      <aside id="asideTop">
+        <div id="precios">
+          <p>
+            Inversores convertidores para energía solar,<br />trabajo contínuo
+          </p>
+          <p>las 24 horas del día los 365 días del año, uso rudo.</p>
+        </div>
+        <div id="horarios">
+          <p>
+            <strong id="horario">
+              <br />
+            </strong>
+            <script>
+              function updateHorario() {
+                const options = {
+                  timeZone: "America/Mexico_City",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: true,
+                };
+                const now = new Date();
+                const timeFormatter = new Intl.DateTimeFormat("es-MX", options);
+                const timeString = timeFormatter.format(now);
+
+                const dateOptions = {
+                  timeZone: "America/Mexico_City",
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                };
+                const dateFormatter = new Intl.DateTimeFormat(
+                  "es-MX",
+                  dateOptions
+                );
+                const dateString = dateFormatter.format(now);
+
+                // Obtener la hora y minutos actuales
+                const hour = now.getUTCHours() - 6; // UTC a hora local de Ciudad de México (UTC-6)
+                const minute = now.getUTCMinutes();
+
+                // Convertir la hora y minutos a formato de 24 horas
+                const currentTime = hour * 60 + minute;
+                const openTime = 8 * 60 + 30; // 8:30 am en minutos
+                const closeTime = 18 * 60; // 6:00 pm en minutos
+
+                // Determinar si está abierto o cerrado
+                const status =
+                  currentTime >= openTime && currentTime < closeTime
+                    ? "Abierto"
+                    : "Cerrado";
+
+                document.getElementById("horario").innerHTML = `${status} 
+                    ${timeString} <br />
+                    ${dateString} <br/>
+                    Ciudad de México.`;
+              }
+
+              updateHorario();
+              setInterval(updateHorario, 60000); // Actualiza cada minuto
+            </script>
+          </p>
+        </div>
+        <div id="informes">
+          <p>
+            <a href="mailto:informes@invercom.com.mx" title="e-mail"
+              >informes@invercom.com.mx</a
+            >
+          </p>
+          <p>
+            Cel. 55-6256 - 6778 para WhatsApp<br />
+            Tel. 55 5738-0318 y 55-5733-9713
+          </p>
+        </div>
+      </aside>
+
+      <section id="home">
+        <h2>Inversores convertidores para energía solar</h2>
+        <p>Unicos con refacciones, servicio y garantía en México.</p>
+        <strong>
+          Precios en pesos Mexicanos: <strong id="mensualidad"></strong>
+          <script>
+            function updateHorario() {
+              const options = {
+                timeZone: "America/Mexico_City",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+              };
+              const now = new Date();
+              const timeFormatter = new Intl.DateTimeFormat("es-MX", options);
+              const timeString = timeFormatter.format(now);
+
+              const dateOptions = {
+                timeZone: "America/Mexico_City",
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              };
+              const dateFormatter = new Intl.DateTimeFormat(
+                "es-MX",
+                dateOptions
+              );
+              const dateString = dateFormatter.format(now);
+
+              // Obtener la hora y minutos actuales
+              const hour = now.getUTCHours() - 6; // UTC a hora local de Ciudad de México (UTC-6)
+              const minute = now.getUTCMinutes();
+
+              // Convertir la hora y minutos a formato de 24 horas
+              const currentTime = hour * 60 + minute;
+              const openTime = 8 * 60 + 30; // 8:30 am en minutos
+              const closeTime = 18 * 60; // 6:00 pm en minutos
+
+              // Determinar si está abierto o cerrado
+              const status =
+                currentTime >= openTime && currentTime < closeTime
+                  ? "Abierto"
+                  : "Cerrado";
+
+              document.getElementById("horario").innerHTML = `${status} 
+              ${timeString} <br />
+              ${dateString}<br/> Ciudad de México`;
+
+              document.getElementById(
+                "mensualidad"
+              ).innerHTML = `${dateString}`;
+            }
+
+            updateHorario();
+            setInterval(updateHorario, 60000); // Actualiza cada minuto
+          </script>
+        </strong>
+
+        <div id="contenedor-productos">
+          <!-- Aquí se agregarán los productos dinámicamente -->
+        </div>
+      </section>
+
+      <aside id="asideLateral">
+        <div id="video">
+          <iframe
+            src="https://www.youtube.com/embed/2Fs0Sab52xo?rel=0"
+            allowfullscreen
+            id="videoMotor"
+            height="100"
+            width="200"
+          ></iframe>
+          <p>
+            Se utiliza un inversor 4500 watts máximo, 1500 watts contínuos con
+            forma de onda semisenoidal pura, frecuencia controlada, salida
+            regulada.
+          </p>
+          <p>
+            Se pone en funcionamiento un motor de medio caballo , con un consumo
+            de 11.0 amperes este funcionamiento se puede hacer de forma contínua
+            con suficientes baterías.
+          </p>
+        </div>
+        <div id="comoElegir">
+          <h4>Como Elegir Inversor</h4>
+          <p>
+            Por razones comerciales la mayoría de los inversores solo indican su
+            potencia en watts máximo, sin indicar los watts contínuos que
+            soportan. En esta sección explicaremos el porqué de los watts máximo
+            y los watts contínuos, para poder elegir el inversor apropiado a su
+            necesidad.
+          </p>
+
+          <p>
+            Todos los aparatos eléctricos y electrónicos presentan dos tipos de
+            consumo: el consumo máximo, que ocurre al encenderse, y el consumo
+            continuo, que se mantiene durante su funcionamiento. Al encenderse,
+            estos dispositivos pueden consumir hasta tres veces más energía que
+            durante su uso normal.
+          </p>
+
+          <p>
+            Ejemplo: Un motor eléctrico ahorrador de energía que consume 1000
+            watts en funcionamiento, consumirá 3000 watts en el momento de
+            encender. Una televisión que consume 200 watts en funcionamiento,
+            consumirá 600 watts en el momento de encender.
+          </p>
+
+          <p>
+            NOTA: El consumo máximo en motores eléctricos que no son ahorradores
+            de energía puede variar de tres hasta ocho veces más en el momento
+            de encender.
+          </p>
+
+          <p>
+            Todos los aparatos tienen indicado su consumo y su voltaje de
+            funcionamiento, normalmente en la parte trasera. Algunos aparatos
+            indican su consumo en watts con una (w) que es lo mismo, el voltaje
+            se indica también con una (v). Otros aparatos indican su consumo en
+            amperes o (amp) el cual hay que convertir a watts mediante una
+            multiplicación, amperes por volts.
+          </p>
+
+          <p>
+            Ejemplo 1: Una televisión que indica consumo 1.3 amperes 120 volts
+            (1.3 x 120 = 156) la televisión consume 156 watts contínuos y en el
+            momento de encender 468 watts máximo.
+          </p>
+
+          <p>
+            Ejemplo 2: Un refrigerador ahorrador de energía que indica consumo
+            3.2 amperes 120 volts (3.2 x 120 = 384) el refrigerador consume 384
+            watts contínuos y en el momento de encender 1152 watts máximo. La
+            misma operación para aparatos que se conecten a 220 volts. (Amperes
+            por volts)
+          </p>
+
+          <p>
+            Al elegir el inversor tome en cuenta la suma de los watts de todos
+            los aparatos que conectará.
+          </p>
+
+          <p>
+            Ejemplo: Un refrigerado ahorrador de energía 384 watts, una
+            televisión 156 watts, cinco focos ahorradores de energía de 24 watts
+            y un ventilador de 60 watts, (384+156+24+24+24+24+24+60=720) consumo
+            total 720 watts contínuos y en el momento de encender 2160 watts
+            máximo. Un inversor 2400 watts máximo 800 watts contínuos es una
+            excelente elección. Es preferible comprar un inversor con salida
+            regulada, para proteger sus aparatos.
+          </p>
+
+          <p>
+            NOTA: Si elige un inversor más potente, digamos 4500 watts máximo
+            1500 watts contínuos, no afecta en nada a sus aparatos y sí prolonga
+            la vida del inversor, pues trabaja con menos carga para el cual fue
+            diseñado, pero es más costoso.
+          </p>
+
+          <p>
+            Hay que tomar en cuenta el consumo del inversor. Ejemplo: Un
+            inversor con alimentación 12 vdc. 4500 Watts máximo 1500 watts
+            contínuos, a plena carga tendrá un consumo de 125 amperes hora, si
+            se conecta a un vehículo hay que verificar que el alternador tenga
+            la capacidad suficiente para producir 125 amperes extra, o si se
+            conecta a un banco de baterías hay que verificar que den los
+            suficientes amperes hora para cubrir el tiempo de energía requerido.
+          </p>
+        </div>
+      </aside>
+
+      <article class="inversor"></article>
+      <p>Estos Inversores tambien se Fabrícan con salida 220 v.a.c.</p>
+      <footer id="footer">
+        <p></p>
+        <p>
+          Los inversores INVERCOM para energía solar son para hacer funcionar
+          todo tipo de aparatos electrónicos y eléctricos (carga resistiva y
+          carga inductiva). Contamos con gran variedad... Inversores para equipo
+          de computo, inversores para electrodomesticos, inversore para climas,
+          inversores para motores eléctricos, inversores grado médico y mas...
+        </p>
+        <address>
+          <a href="mailto:informes@invercom.com.mx" title="e-mail"
+            >informes@invercom.com.mx</a
+          >
+          <br />Cel.55-6256-6778 para WhatsApp<br />Tel.55-5738-0318 y
+          55-5733-9713
+        </address>
+        <address id="sign">
+          <a
+            href="mailto:ortegon000@hotmail.com"
+            title="Eduardo Ortega: Desarrollo Web"
+            style="color: #ddd; font-size: 1em; padding: 1em"
+          >
+            © 2013 | Por: Eduardo Ortega.
+          </a>
+        </address>
+      </footer>
+    </div>
+    <!--modal para mostra todos los mensajes-->
+    <div id="modal-mensaje" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen" />
+        <p id="mensaje-texto"></p>
+        <button id="btn-aceptar-mensaje">Aceptar</button>
+        <button id="btn-seguir-comprando">Seguir comprando</button>
+        <button id="btn-ir-carrito">Ir al carrito</button>
+      </div>
+    </div>
+    <!-- Modal para inicio de sesión -->
+    <div id="modal-iniciar-sesion" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <p>Debes iniciar sesión para continuar.</p>
+        <button id="btn-iniciar-sesion-modal">Iniciar sesión</button>
+      </div>
+    </div>
+    <!-- Modal para solicitar factura -->
+    <div id="modal-factura" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <p>deseas obtener una factura para tu compra</p>
+        <button id="btn-aceptar-modal">SI</button>
+        <button id="btn-rechazar-modal">NO</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@media print{
+
+	* {
+		margin: 0;
+	}	
+	body {
+		font-size: 12px;
+	}
+	button {
+		display: none;
+	}
+}
+body {
+	font-size: 14px;
+	font-family: arial;
+	background-color: #ccc;
+	text-align: center;
+	vertical-align: top;
+}
+button {
+	background-color: #00a;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	padding: 5px;
+	cursor: pointer;
+}
+p {
+	text-align: justify;
+}
+#article1 figure, #article1 p {
+	display: inline-block;
+	max-width: 400px;
+	vertical-align: middle;
+}
+#main {
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 800px;
+}

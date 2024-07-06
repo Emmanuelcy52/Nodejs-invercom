@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de Facturas</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="vistas/css/navbar.css" rel="stylesheet" />
+    <script src="../../control/js/verificarsesion.js"></script>
+    <script src="control/js/User.js"></script>
+
+    <!-- Bootstrap JS y dependencias opcionales (jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../../../../control/js/facturasCRUD.js"></script>
+    <script src="../../../../../control/js/navbaradmin.js"></script>
+    <link href="vistas/css/facturas.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/modal.css" />
+    <!-- CSS personalizado -->
+    <style>
+      /* Estilos adicionales aquí si es necesario */
+      .btn-group {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainHome">
+      <header id="header">
+        <div id="logo">
+          <img
+            src="vistas/extras/img/logotipo.png"
+            alt="logo Invercom"
+            title="Invercom: Fabrica de Inversores Electronicos"
+            height="96"
+            width="180"
+          />
+        </div>
+        <div id="titulo">
+          <h1>Fabricante de Inversores Electrónicos</h1>
+        </div>
+      </header>
+
+      <nav id="main-navbar"></nav>
+
+      <div class="container mt-5">
+        <h1>Datos de Facturacion</h1>
+
+        <div id="boton-registro">
+          <!-- aqui va el boton de resgitar si esta vacia la tabla-->
+        </div>
+
+        <!-- Tabla de listado de facturas -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Dirección</th>
+              <th>Número de identificación fiscal</th>
+              <th>Teléfono</th>
+              <th>Correo electrónico de contacto</th>
+              <th>fecha de creacion</th>
+              <th>acciones</th>
+            </tr>
+          </thead>
+          <tbody id="FacturaTbody">
+            <!-- Ejemplo de una factura -->
+
+            <!-- Puedes repetir este bloque para cada factura -->
+          </tbody>
+        </table>
+
+        <button
+          id="btn-generar"
+          class="btn btn-success"
+          onclick="location.href='/generarFactura';"
+        >
+          Genarar Factura
+        </button>
+      </div>
+    </div>
+
+    <address id="sign">
+      <a
+        href="https://www.facebook.com/profile.php?id=61558623440122"
+        title="JEGME: Soluciones tecnológicas"
+        style="color: #ddd; font-size: 1em; padding: 1em"
+      >
+        © 2024 | Por: JEGME Soluciones tecnológicas.
+      </a>
+    </address>
+
+    <div id="modal-mensaje-index" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen-index" />
+        <p id="mensaje-texto-index"></p>
+        <button id="btn-aceptar-mensaje-index">Iniciar sesión</button>
+        <button id="btn-cancelar-mensaje-index">Cancelar</button>
+      </div>
+    </div>
+
+    <div id="modal-mensaje" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen" />
+        <p id="mensaje-texto"></p>
+        <button id="btn-aceptar-mensaje">Aceptar</button>
+        <button id="btn-seguir-comprando">Seguir comprando</button>
+        <button id="btn-ir-carrito">Ir al carrito</button>
+      </div>
+    </div>
+  </body>
+</html>

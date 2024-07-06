@@ -1,0 +1,143 @@
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-mensaje {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mensaje-imagen {
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+}
+
+#modal-mensaje-index {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mensaje-imagen-index {
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Aceptar */
+#btn-aceptar-mensaje {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btn-cancelar-mensaje {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-aceptar-mensaje-index {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btn-cancelar-mensaje-index {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-aceptar-mensaje:hover {
+    background-color: darkblue;
+}
+
+#btn-cancelar-mensaje:hover {
+    background-color: darkblue;
+}
+
+#btn-aceptar-mensaje-index:hover {
+    background-color: darkblue;
+}
+
+#btn-cancelar-mensaje-index:hover {
+    background-color: darkblue;
+}
+
+#btn-seguir-comprando {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-aceptar-comprando:hover {
+    background-color: darkblue;
+}
+
+#btn-ir-carrito {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-ir-comprando:hover {
+    background-color: darkblue;
+}

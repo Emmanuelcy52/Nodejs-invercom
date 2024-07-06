@@ -1,0 +1,41 @@
+body 
+{
+	background: #333;
+	color: #DDD;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+section
+{
+	margin: 0 auto;
+	width: 80%;
+}
+p
+{
+	display: inline-block;
+	padding: 1em;
+	text-align: justify;
+	vertical-align: top;
+	width: 40%;
+}
+iframe
+{
+	border: none;
+	box-shadow: #000 2px 2px 5px;
+	height: 400px;
+	margin: 0 auto;
+	width: 90%;
+}
+@media screen and (max-width: 480px)
+{
+	section
+	{
+		width: 100%;
+	}
+	p
+	{
+		width: 80%;
+	}
+}

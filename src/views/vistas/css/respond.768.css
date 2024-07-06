@@ -1,0 +1,36 @@
+@media screen 
+and (min-width: 768px) 
+and (max-width: 1023px) 
+{
+	#asideLateral
+	{
+		width: 90%;
+	}
+	#home
+	{
+		width: 100%;
+	}
+	#titulo h1
+	{
+		text-align: right;
+		font-size: 1.5em;
+	}
+	#nav a
+	{
+		font-size: 0.8em;
+		padding: 0.5em 1em;
+	}
+	#panel figcaption
+	{
+		width: 80%;
+	}
+	.imgInv img
+	{
+		height: auto;
+		width: 40%;
+	}
+	.tablaInv
+	{
+		font-size: 0.8em;
+	}
+}
