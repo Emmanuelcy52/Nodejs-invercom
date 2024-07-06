@@ -1,0 +1,186 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	background: #999;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+
+#mainHome
+{
+	background: #EEE;
+	border-radius: 0.5em;
+	box-shadow:#333 0 0 1em;
+	margin: 0.5em auto;
+	max-width: 1232px;
+}
+#mainHome > p
+{
+	color: #C00;
+	font-size: 18px;
+}
+fieldset
+{
+	color: #FFF;
+	background-color: #333;
+	border-radius: 0.5em;
+	margin: 0 auto;
+	padding: 2em;
+	text-align: left;
+	max-width: 80%;
+}
+h1
+{
+	color: #0479d3;
+}
+label
+{
+	cursor: pointer;
+	display: block;
+	display: inline-block;
+	font-weight: bold;
+	width: 40%;
+}
+label:hover
+{
+	text-shadow: #0479d3 0 0 10px;
+}
+input, textarea
+{
+	display: inline-block;
+	margin-bottom: 2em;
+	padding: 0.3em 0;
+	vertical-align: top;
+	width: 40%;
+	border: none;
+	border-radius: 3px;
+}
+input:focus, textarea:focus
+{
+	box-shadow: #0479d3 0 0 15px; 
+}
+input:last-child
+{
+	background: #0479d3;
+	box-shadow: #000 2px 2px 5px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: bold;
+}
+#main
+{
+	margin: 0 auto;
+	max-width: 800px;
+}
+#mapa
+{
+	padding: 2em;
+}
+#mapa iframe
+{
+	border-radius: 5px;
+	height: 500px;
+	margin: 0 auto;
+	width: 90%;
+	box-shadow: #000 2px 2px 5px;
+}
+#footer
+{
+	background: #333;
+	color: #DDD;
+	padding: 2em;
+}
+#footer a
+{
+	color: #DDD;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header 
+{
+	background-image: url(../extras/img/back.jpg);
+	border-radius: 0.5em 0.5em 0px 0px;
+	min-height: 150px;
+}
+#header div 
+{
+	padding: 0.3em 0;
+	display: inline-block;
+	padding-top: 1.5em;
+	vertical-align: top;
+	text-align: left;
+}
+
+
+#logo 
+{
+	width: 35%;
+}
+#logo img 
+{
+	margin-left: 6em;
+}
+
+
+#titulo
+{
+	width: 60%;
+}
+#titulo h1 
+{
+	color: #EEE;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.small-img {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clickable-card:hover {
+    transform: scale(1.05);
+}
+
+#nav 
+{
+	background: #092ada;
+	box-shadow:#000 0px 0px 10px;
+	margin: 1em 0;
+	margin-top: 0em;
+}
+#nav a 
+{
+	border-right:3px solid #CCC;
+	color:#EEE;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	line-height: 2em;
+}
+#nav a:hover
+{
+	background: #F90;
+}
+#nav ul
+{
+	list-style: none;
+}
+#nav li 
+{
+	display: inline-block;
+	margin-left:-0.22em
+}

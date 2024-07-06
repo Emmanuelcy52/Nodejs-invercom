@@ -1,0 +1,445 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	background: #999;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+#asideTop 
+{
+	color: #0000FF;
+}
+#asideTop div
+{
+	display: inline-block;
+	margin: 1em 0;
+	vertical-align: middle;
+	width: 32%;
+}
+#asideLateral
+{
+	display:inline-block;
+	width: 35%;
+}
+#asideLateral div
+{
+		background: #FEFEFE;
+		border-radius: 5px;
+		border: #CCC solid 1px; 
+		box-shadow:#999 5px 4px 5px;
+		font-size: 0.8em;
+		margin-bottom: 1em;
+		padding: 1em;
+		text-align: justify;
+		vertical-align: top;
+}
+#asideLateral iframe
+{
+	height: 300px;
+	width: 100%;
+}
+#asideLateral p
+{
+	margin: 1em 0;
+}
+#footer
+{
+	background: #333;
+	color: #DDD;
+	border-radius: 0em 0em 5px 5px;
+	padding: 2em;
+}
+#footer a
+{
+	color: #DDD;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header 
+{
+	background-image: url(../extras/img/back.jpg);
+	border-radius: 0.5em 0.5em 0px 0px;
+	min-height: 150px;
+}
+#header div 
+{
+	padding: 0.3em 0;
+	display: inline-block;
+	padding-top: 1.5em;
+	vertical-align: top;
+	text-align: left;
+}
+#home
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+}
+#home h2 
+{
+	color: #C00;
+	font-family: sans-serif;
+	font-size: 21px;
+}
+#home > p
+{
+	color: #C00;
+	text-shadow:#FFF 0 0 5px;
+	font-size: 21px;
+	animation: destello 4s ease;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	-webkit-animation: destello 4s ease;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 2s;
+	-moz-animation: destello 4s ease;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-delay: 2s;
+	-ms-animation: destello 4s ease;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-delay: 2s;
+	-o-animation: destello 4s ease;
+	-o-animation-iteration-count: infinite;
+	-o-animation-delay: 2s;
+}
+@keyframes destello
+{
+	0%
+	{
+		opacity: 0;
+	}
+	70%
+	{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes destello
+{
+	0%
+	{
+		opacity: 0;
+	}
+	70%
+	{
+		opacity: 1;
+	}
+}
+@-moz-keyframes destello
+{
+	0%
+	{
+		opacity: 0;
+	}
+	70%
+	{
+		opacity: 1;
+	}
+}
+@-ms-keyframes destello
+{
+	0%
+	{
+		opacity: 0;
+	}
+	70%
+	{
+		opacity: 1;
+	}
+}
+@-o-keyframes destello
+{
+	0%
+	{
+		opacity: 0;
+	}
+	70%
+	{
+		opacity: 1;
+	}
+}
+#horarios
+{
+	color: #C00;
+}
+#informes p:nth-child(1)
+{
+	margin-bottom:1em;
+}
+#logo 
+{
+	width: 35%;
+}
+#logo img 
+{
+	margin-left: 6em;
+}
+#mainHome
+{
+	background: #EEE;
+	border-radius: 0.5em;
+	box-shadow:#333 0 0 1em;
+	margin: 0.5em auto;
+	max-width: 1232px;
+}
+#mainHome > p
+{
+	color: #C00;
+	font-size: 18px;
+}
+#nav 
+{
+	background: #092ada;
+	box-shadow:#000 0px 0px 10px;
+	margin: 1em 0;
+	margin-top: 0em;
+}
+#nav a 
+{
+	border-right:3px solid #CCC;
+	color:#EEE;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	line-height: 2em;
+}
+#nav a:hover
+{
+	background: #F90;
+}
+#nav ul
+{
+	list-style: none;
+}
+#nav li 
+{
+	display: inline-block;
+	margin-left:-0.22em
+}
+#panel a
+{
+	background: #06F;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #666666;
+	color: white;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+	transition:all 0.3s ease;
+}
+#panel a:hover
+{
+	background: #F90;
+	box-shadow: none;
+}
+#panel figcaption
+{
+	display: inline-block;
+	margin-top: 1em;
+	width: 70%;
+}
+#panel img
+{	
+	vertical-align: top;
+	margin-bottom:2em;	
+}
+#precios p:nth-child(3)
+{
+	margin-top:1em;
+}
+#titulo
+{
+	width: 60%;
+}
+#titulo h1 
+{
+	color: #EEE;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.inversor 
+{
+	border-top: 1px solid #aaa;
+	margin: 1em 0;
+	padding: 1em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.inversor p 
+{
+	color:#C00;
+	text-align: center;
+}
+
+.inversor h4 {
+	margin: -15px !important;
+}
+.imgInv
+{
+	display: inline-block;
+	margin: 1em 0;
+	margin-bottom: 0;
+	width: 45%;
+ 	text-align: left;
+ 	vertical-align: top;
+}
+.imgInv h3 
+{
+	color:#F60;
+}
+.imgInv h4 
+{
+	margin: 0.5em 0;
+	color: #C00;
+}
+.imgInv img 
+{
+	margin: 1em 0;
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
+.tablaInv 
+{
+	box-shadow: #333 2px 2px 6px; 
+	color: #666;
+	display: inline-block; 
+	vertical-align: top;
+	width: 100%;
+}
+.tablaInv tbody > tr:nth-child(1) 
+{
+	background: #DDD;
+}
+.tablaInv tbody > tr:nth-child(2) 
+{
+	background: #CCC;
+}
+.tablaInv tbody > tr:nth-child(3) 
+{
+	background: #BBB;
+}
+.tablaInv td 
+{
+	border-right:#FFF 1px solid;
+	color: #00C;
+	padding: 0.5em 0.5em;
+}
+
+.tablaInv td:nth-child(6)
+{
+	background: #01F;
+	border-bottom:#CCC 3px solid;
+	padding: 0;
+	width: 10%;
+}
+.tablaInv td:nth-child(6) a 
+{
+	color: #FFF;
+	font-size: 1em;
+	padding: 0.3em 1.5em;
+	text-decoration:none;
+}
+.tablaInv td:nth-child(6) a:hover 
+{
+	background: #F90;
+}
+
+
+.tablaInv td:nth-child(7)
+{
+	background: #01F;
+	border-bottom:#CCC 3px solid;
+	padding: 0;
+	width: 25%;
+	
+}
+.tablaInv td:nth-child(7) a 
+{
+	color: #FFF;
+	font-size: 1em;
+	padding: 0.3em 1.5em;
+	text-decoration:none;
+}
+.tablaInv td:nth-child(7) a:hover 
+{
+	background: #F90;
+}
+
+
+.tablaInv td:nth-child(8)
+{
+	background: #01F;
+	border-bottom:#CCC 3px solid;
+	padding: 0;
+	width: 25%;
+	
+}
+.tablaInv td:nth-child(8) a 
+{
+	color: #FFF;
+	font-size: 1em;
+	padding: 0.3em 1.5em;
+	text-decoration:none;
+}
+.tablaInv td:nth-child(8) a:hover 
+{
+	background: #F90;
+}
+
+.ficha-tecnica{
+	margin: 20px;
+}
+
+
+.show {
+    display: block;
+}
+
+.active {
+    background-color: #ddd;
+}
+
+
+/* Estilos para el modal de la ficha técnica */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-contenido {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  .cerrar {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  

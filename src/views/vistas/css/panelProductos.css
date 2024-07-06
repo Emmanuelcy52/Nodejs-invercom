@@ -1,0 +1,173 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	background: #999;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+#header 
+{
+	background-image: url(../extras/img/back.jpg);
+	border-radius: 0.5em 0.5em 0px 0px;
+	min-height: 150px;
+}
+#header div 
+{
+	padding: 0.3em 0;
+	display: inline-block;
+	padding-top: 1.5em;
+	vertical-align: top;
+	text-align: left;
+}
+#logo 
+{
+	width: 35%;
+}
+#logo img 
+{
+	margin-left: 6em;
+}
+#mainHome
+{
+	background: #EEE;
+	border-radius: 0.5em;
+	box-shadow:#333 0 0 1em;
+	margin: 0.5em auto;
+	max-width: 1232px;
+}
+#mainHome > p
+{
+	color: #C00;
+	font-size: 18px;
+}
+#nav 
+{
+	background: #092ada;
+	box-shadow:#000 0px 0px 10px;
+	margin: 1em 0;
+	margin-top: 0em;
+}
+#nav a 
+{
+	border-right:3px solid #CCC;
+	color:#EEE;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	line-height: 2em;
+}
+#nav a:hover
+{
+	background: #F90;
+}
+#nav ul
+{
+	list-style: none;
+}
+#nav li 
+{
+	display: inline-block;
+	margin-left:-0.22em
+}
+#panel a
+{
+	background: #06F;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #666666;
+	color: white;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+	transition:all 0.3s ease;
+}
+#panel a:hover
+{
+	background: #F90;
+	box-shadow: none;
+}
+#panel figcaption
+{
+	display: inline-block;
+	margin-top: 1em;
+	width: 70%;
+}
+#panel img
+{	
+	vertical-align: top;
+	margin-bottom:2em;	
+}
+#precios p:nth-child(3)
+{
+	margin-top:1em;
+}
+#titulo
+{
+	width: 60%;
+}
+#titulo h1 
+{
+	color: #EEE;
+	text-shadow: 2px 2px 2px #333;
+}
+table {
+    width: 100%; /* Ajusta el ancho de la tabla al contenedor */
+    table-layout: fixed; /* Fija el ancho de las columnas */
+    position: relative; /* Agregar posición relativa */
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #d7d7d7;
+    border-radius: 10px; /* Redondear las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para que parezcan flotar */
+    border-top-left-radius: 10px; /* Redondear las esquinas superiores */
+    border-top-right-radius: 10px; /* Redondear las esquinas superiores */
+    border-collapse: separate; /* Necesario para que el border-radius de las celdas funcione */
+    border-spacing: 0; /* Elimina el espacio entre las celdas */
+  }
+
+  th,
+  td {
+    max-width: 200px; /* Establece un ancho máximo para las celdas */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al texto que se desborda */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    border: 1px solid #dddddd; /* Agrega bordes a las celdas */
+    padding: 8px; /* Añade relleno a las celdas */
+    text-align: center; /* Centra el texto horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  /* Estilos para la tabla */
+
+  .tabla-container {
+    max-width: 100%; /* Ancho máximo igual al ancho de la pantalla */
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si el contenido excede el ancho máximo */
+  }
+
+  th:hover,
+  td:hover {
+    text-overflow: clip; /* Muestra todo el contenido sin puntos suspensivos */
+    white-space: normal; /* Evita que el texto se divida en múltiples líneas */
+    background-color: blue; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    transition: all 0.3s; /* Transición suave */
+    max-width: fit-content; /* Permite que la celda se expanda horizontalmente */
+    max-height: fit-content;
+    overflow: visible; /* Muestra todo el contenido */
+    z-index: 1; /* Hace que la celda se eleve sobre las demás */
+    position: relative; /* Establece el posicionamiento relativo */
+  }
+
+  /* Estilos para las imágenes dentro de las celdas */
+  td img {
+    max-width: 50px; /* Ancho máximo para las imágenes */
+    max-height: 50px; /* Altura máxima para las imágenes */
+  }

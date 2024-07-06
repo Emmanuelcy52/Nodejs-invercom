@@ -1,0 +1,22 @@
+@media screen 
+and (min-width: 1024px) 
+and (max-width: 1232px) 
+{
+	#nav a
+	{
+		font-size: 0.9em;
+	}
+	#panel figcaption
+	{
+		width: 60%;
+	}
+	.imgInv img
+	{
+		height: auto;
+		width: 40%;
+	}
+	.tablaInv
+	{
+		font-size: 0.8em;
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario</title>
+    <!-- Enlaza tu archivo CSS aquí -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="vistas/css/perfil.css" />
+    <link rel="stylesheet" href="vistas/css/modal.css" />
+    <link href="vistas/css/navbar.css" rel="stylesheet" />
+
+    <script src="../../control/js/navbar.js"></script>
+    <script src="control/js/User.js"></script>
+    <script src="control/js/verificarsesion.js"></script>
+  </head>
+  <body>
+    <div id="mainHome">
+      <header id="header">
+        <div id="logo">
+          <img
+            src="vistas/extras/img/logotipo.png"
+            alt="logo Invercom"
+            title="Invercom: Fabrica de Inversores Electronicos"
+            height="96"
+            width="180"
+          />
+        </div>
+        <div id="titulo">
+          <h1>Fabricante de Inversores Electrónicos</h1>
+        </div>
+      </header>
+      <nav id="main-navbar"></nav>
+      <main>
+        <h1>Perfil de Usuario</h1>
+      </main>
+
+      <footer id="footer">
+        <p></p>
+        <p>
+          Los inversores INVERCOM para energía solar son para hacer funcionar
+          todo tipo de aparatos electrónicos y eléctricos (carga resistiva y
+          carga inductiva). Contamos con gran variedad... Inversores para equipo
+          de computo, inversores para electrodomesticos, inversore para climas,
+          inversores para motores eléctricos, inversores grado médico y mas...
+        </p>
+        <address>
+          <a href="mailto:informes@invercom.com.mx" title="e-mail"
+            >informes@invercom.com.mx</a
+          >
+          <br />Cel.55-6256-6778 para WhatsApp<br />Tel.55-5738-0318 y
+          55-5733-9713
+        </address>
+        <address id="sign">
+          <a
+            href="mailto:ortegon000@hotmail.com"
+            title="Eduardo Ortega: Desarrollo Web"
+            style="color: #ddd; font-size: 1em; padding: 1em"
+          >
+            © 2013 | Por: Eduardo Ortega.
+          </a>
+        </address>
+      </footer>
+    </div>
+    <div id="modal-mensaje-index" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen-index" />
+        <p id="mensaje-texto-index"></p>
+        <button id="btn-aceptar-mensaje-index">Iniciar sesión</button>
+        <button id="btn-cancelar-mensaje-index">Cancelar</button>
+      </div>
+    </div>
+  </body>
+</html>

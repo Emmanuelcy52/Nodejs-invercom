@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Carrito</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="vistas/css/carrito.css" />
+
+    <link href="vistas/css/navbar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vistas/css/modal.css" />
+
+    <script src="../../control/js/navbar.js"></script>
+    <script type="module" src="../../control/js/carrito.js"></script>
+
+    <script src="../../control/js/verificarsesion.js"></script>
+    <script src="control/js/User.js"></script>
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <script
+      src="../../control/js/stripe-keys.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div id="mainHome">
+      <header id="header">
+        <div id="logo">
+          <img
+            src="vistas/extras/img/logotipo.png"
+            alt="logo Invercom"
+            title="Invercom: Fabrica de Inversores Electronicos"
+            height="96"
+            width="180"
+          />
+        </div>
+        <div id="titulo">
+          <h1>Fabricante de Inversores Electrónicos</h1>
+        </div>
+      </header>
+      <nav id="main-navbar"></nav>
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Card para mostrar los productos -->
+          <div class="col-lg-7 mb-5">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Productos</h5>
+              </div>
+              <div class="card-body">
+                <!-- Aquí se llenarán dinámicamente los productos -->
+              </div>
+            </div>
+          </div>
+          <!-- Card para mostrar el resumen del carrito -->
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Resumen de compra</h5>
+              </div>
+              <div class="card-body detalles-resumen">
+                <!-- Aquí se agregará dinámicamente el resumen de la compra -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <p></p>
+        <p>
+          Los inversores INVERCOM para energía solar son para hacer funcionar
+          todo tipo de aparatos electrónicos y eléctricos (carga resistiva y
+          carga inductiva). Contamos con gran variedad... Inversores para equipo
+          de computo, inversores para electrodomésticos, inversores para climas,
+          inversores para motores eléctricos, inversores grado médico y más...
+        </p>
+        <address>
+          <a href="mailto:informes@invercom.com.mx" title="e-mail"
+            >informes@invercom.com.mx</a
+          >
+          <br />Cel.55-6256-6778 para WhatsApp<br />Tel.55-5738-0318 y
+          55-5733-9713
+        </address>
+        <address id="sign">
+          <a
+            href="https://www.facebook.com/profile.php?id=61558623440122"
+            title="JEGME: Soluciones tecnológicas"
+            style="color: #ddd; font-size: 1em; padding: 1em"
+            >© 2024 | Por: JEGME Soluciones tecnológicas.</a
+          >
+        </address>
+      </footer>
+    </div>
+
+    <div id="modal-mensaje-index" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen-index" />
+        <p id="mensaje-texto-index"></p>
+        <button id="btn-aceptar-mensaje-index">Iniciar sesión</button>
+        <button id="btn-cancelar-mensaje-index">Cancelar</button>
+      </div>
+    </div>
+
+    <div id="modal-mensaje" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img src="" alt="Imagen" id="mensaje-imagen" />
+        <p id="mensaje-texto"></p>
+        <button id="btn-aceptar-mensaje">Aceptar</button>
+        <button id="btn-seguir-comprando">Seguir comprando</button>
+        <button id="btn-ir-carrito">Ir al carrito</button>
+      </div>
+    </div>
+    <!-- Modal para solicitar factura -->
+    <div id="modal-factura" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <p>deseas obtener una factura para tu compra</p>
+        <button id="btn-aceptar-modal">SI</button>
+        <button id="btn-rechazar-modal">NO</button>
+      </div>
+    </div>
+  </body>
+</html>
