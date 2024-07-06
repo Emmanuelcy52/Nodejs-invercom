@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>INVERSORES INVERCOM|Inversor 4500 watts entrada 24 volts dc.</title>
+    <meta
+      name="description"
+      content="Ficha técnica del inversor convertidor 4500 watts entrada 24 vcd. Salida 120 vca."
+    />
+
+    <link rel="stylesheet" href="../css/fichasTecnicas.css" />
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Ficha técnica</h1>
+
+      <article>
+        <p class="data">
+          Inversor electrónico de poder<br />
+          Entrada de 24 volts dc.<br />
+          Salida regulada de 120 volts ac. 60 hz.<br />
+          4500 watts máximo 1500 watts continuos<br />
+        </p>
+        <img
+          src="fichasTecnicas/img/45001.jpg"
+          alt=""
+          height="125"
+          width="180"
+        />
+        <img
+          src="fichasTecnicas/img/4500w2.jpg"
+          alt=""
+          height="125"
+          width="160"
+        />
+        <h2 class="clave">Clave: IC4500-E24S120</h2>
+      </article>
+      <div class="enlaces">
+        <p align="center">
+          <a
+            href="../instructivos/Inst4500-24-120.html"
+            title="instructivo 4500-24-120.html"
+            >Ver instructivo</a
+          >
+        </p>
+      </div>
+      <p>
+        Inversor electrónico con regulador integrado de uso rudo. Para trabajo
+        continuo.
+      </p>
+      <article>
+        <h3>Datos Tecnicos</h3>
+        <p>
+          - Protección electrónica contra corto circuito en la salida 120
+          vca.<br />
+          - Protección de sobre carga.<br />
+          - Protección de bajo voltaje vcd.<br />
+          - Protección de sobre voltaje vcd.<br />
+          - Frecuencia controlada.<br />
+          - Libre de armónicas.<br />
+          - Libre de picos transitorios.<br />
+          - Alimentación 22-30 volts dc<br />
+          - Salida regulada +- 5% 120 volts ac. 60 hz<br />
+          - Corriente de salida 37.5 amperes momentáneos<br />
+          - 12.5 amperes continuos<br />
+          - Salida 4500 watts O.P.M (máximo)<br />
+          - 1500 watts R.M.S (continuos)<br />
+          - Forma de onda, semisenoidal pura<br />
+          - Ventilacion forzada (enfriado con ventilador)<br />
+        </p>
+        <p>
+          Terminal de encendido y apagado, toma corriente de 120 volts para
+          control remoto alámbrico en la parte trasera del inversor
+        </p>
+      </article>
+      <article>
+        <h3>Cuerpo del Inversor</h3>
+        <p>Fabricado en aluminio extruido anodizado en color natural</p>
+        <h3>Dimensiones</h3>
+        <p>
+          - Alto: 17 centimetros<br />
+          - Ancho: 24 centimetros<br />
+          - Largo: 32.5 centimetros<br />
+        </p>
+        <h3>Peso en Kilos</h3>
+        <p>15.9 kilogramos</p>
+        <p>
+          <strong style="color: red">NOTA: </strong>
+          Recuerde que en todos los inversores de todas las marcas, los watts
+          máximo son de uso momentáneo.
+        </p>
+        <!-- <button onclick="window.print();">Imprimir</button
+        >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.close();">
+          Cerrar
+        </button> -->
+        <button id="cerrarFicha">Cerrar</button>
+      </article>
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#cerrarFicha").on("click", function () {
+        // Encuentra el contenedor de la ficha técnica y ocúltalo
+        var contenedor = $(".ficha-tecnica");
+        contenedor.slideUp();
+      });
+    });
+  </script>
+</html>

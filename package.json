@@ -1,0 +1,33 @@
+{
+  "name": "invercom",
+  "version": "1.0.0",
+  "description": "es una pagina web para administar compras de inversores de energia con metodos de pago y seguridad",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Emmanuel Canales Yonca, Gerardo Amador Rodriges, Abraham jesus Sandoval Cortes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "barcode": "^0.0.4",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "bwip-js": "^4.3.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.9",
+    "nodemailer": "^6.9.13",
+    "pdfkit": "^0.15.0",
+    "raw-body": "^2.5.2",
+    "stripe": "^15.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}

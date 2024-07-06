@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>INVERCOM|IC9000-E24S120</title>
+    <meta
+      name="description"
+      content="Ficha técnica del inversor convertidor 9000 watts entrada 24 vcd. Salida 120 vca."
+    />
+
+    <link rel="stylesheet" href="../css/fichasTecnicas.css" />
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Ficha técnica</h1>
+
+      <!--<div class="enlaces">
+			  <!--<a href="220VCA/9000-24-220.html" title="Ficha tecnica 9000-24-220.html">Ver ficha tecnica a 220VCA</a>
+              <p align="center"><a href="../instructivos/Inst9000-24-120.html" title="instructivo 9000-24-120.html">Ver instructivo</a></p>
+		</div>-->
+
+      <article>
+        <p class="data">
+          Inversor electrónico de poder<br />
+          Entrada de 48 volts dc.<br />
+          Salida regulada de 120 volts ac. 60 hz.<br />
+          18000 watts máximo 6000 watts continuos<br />
+        </p>
+        <img
+          src="fichasTecnicas/img/18000w1.png"
+          alt=""
+          height="200"
+          width="156"
+        />
+        <img
+          src="fichasTecnicas/img/18000w2.png"
+          alt=""
+          height="200"
+          width="156"
+        />
+        <h2 class="clave">Clave: SP18000-E48S120</h2>
+      </article>
+      <!--<div class="enlaces">
+      <p align="center"><a href=  "../instructivos/Inst18000-48-120.html" title="instructivo 9000-48-120.html">Ver instructivo</a></p>
+      </div>-->
+      <p>
+        Inversor electrónico con regulador integrado de uso rudo. Para trabajo
+        continuo.
+      </p>
+
+      <article>
+        <h3>Datos Tecnicos</h3>
+        <p>
+          - Protección electrónica contra corto circuito en la salida 120
+          vca.<br />
+          - Protección de sobre carga.<br />
+          - Protección de bajo voltaje vcd.<br />
+          - Protección de sobre voltaje vcd.<br />
+          - Frecuencia controlada.<br />
+          - Libre de armónicas.<br />
+          - Libre de picos transitorios.<br />
+          - Alimentación 40-60 volts dc<br />
+          - Salida regulada +- 5% 120 volts ac. 60 hz<br />
+          - Corriente de salida 150 amperes momentáneos<br />
+          - 50 amperes continuos<br />
+          - Salida 18000 watts O.P.M (máximo)<br />
+          - 6000 watts R.M.S (continuos)<br />
+          - Forma de onda, senoidal pura<br />
+          - Ventilacion forzada (enfriado con ventilador)<br />-temperatura de
+          operacion 45°C<br />-temperatura maxima 70°C
+        </p>
+      </article>
+      <article>
+        <!--<h3>Cuerpo del Inversor</h3>
+				<p>Fabricado en aluminio extruido anodizado en color natural</p>-->
+        <h3>Dimensiones</h3>
+        <p>
+          - Alto: 42.5 centimetros<br />
+          - Ancho: 28.0 centimetros<br />
+          - Largo: 52.5 centimetros<br />
+        </p>
+        <h3>Peso en Kilos</h3>
+        <p>54.5 kilogramos</p>
+        <p>
+          <strong style="color: red">NOTA: </strong>
+          Recuerde que en todos los inversores de todas las marcas, los watts
+          máximo son de uso momentáneo.
+        </p>
+        <!-- <button onclick="window.print();">Imprimir</button
+        >&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.close();">
+          Cerrar
+        </button> -->
+        <button id="cerrarFicha">Cerrar</button>
+      </article>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#cerrarFicha").on("click", function () {
+        // Encuentra el contenedor de la ficha técnica y ocúltalo
+        var contenedor = $(".ficha-tecnica");
+        contenedor.slideUp();
+      });
+    });
+  </script>
+</html>
