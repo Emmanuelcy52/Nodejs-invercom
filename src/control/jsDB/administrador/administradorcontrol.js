@@ -145,7 +145,7 @@ const verificarSesion = async (req, res) => {
                 res.json(response);
             }
         }
-        
+
     } catch (error) {
         response.error = true;
         response.mensaje = 'Error al intentar iniciar sesión. Por favor, inténtalo de nuevo más tarde.';
@@ -156,11 +156,38 @@ const verificarSesion = async (req, res) => {
     }
 };
 
+const obtener = async (req, res) => {
+    let response = {};
+    const conn = await obtenerConexion();
+
+    try {
+        const sql = "SELECT * FROM administradores";
+        const [rows] = await conn.query(sql);
+
+        if (rows.length > 0) {
+            response.error = false;
+            response.Admins = rows;
+        } else {
+            response.error = false;
+            response.Admins = rows;
+        }
+    } catch (error) {
+        response.error = true;
+        response.mensaje = "Error en la operación";
+    } finally {
+        // Siempre cerrar la conexión en el bloque finally para liberar recursos
+        conn.end();
+        // Enviar la respuesta una sola vez aquí
+        res.json(response);
+    }
+}
+
 
 
 // exportar la función
 export default {
     Registro,
     verificarSesion,
-    IniciarSesion
+    IniciarSesion,
+    obtener
 };

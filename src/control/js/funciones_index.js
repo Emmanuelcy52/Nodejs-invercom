@@ -169,7 +169,7 @@ function mostrarProductos(productos) {
       $('<th scope="col">Entrada</th>'),
       $('<th scope="col">Salida</th>'),
       $('<th scope="col">Precio MXN</th>'),
-      $('<th scope="col">Precio MXN a 12 meses</th>'),
+      $('<th scope="col">Pagos a 12 meses</th>'),
       $('<th scope="col">Productos disponibles</th> '),
       $('<th scope="col">Comprar</th>'),
       $('<th scope="col">Ficha Técnica</th>'),
@@ -192,12 +192,14 @@ function mostrarProductos(productos) {
       var cantidadParagraph = $("<p>")
         .addClass("cantidad-disponible")
         .text("Disponibles: " + cantidad);
+      var meses = calcularMeses(info.precio);
 
       trBody.append(
+        
         $("<td></td>").text(info.entrada),
         $("<td></td>").text(info.salida),
-        $("<td></td>").text("$ " + info.precio + ".ºº"),
-        $("<td></td>").text("$ " + info.precio + ".ºº"),
+        $("<td></td>").text("$ " + info.precio),
+        $("<td></td>").text("$ " + meses),
         $("<td>").append(cantidadParagraph), // Aquí se agrega el párrafo con la cantidad disponible
         $("<td></td>").append(
           $("<a></a>")
@@ -572,6 +574,20 @@ function mostrarProductos(productos) {
         window.location.href = "/carrito";
       });
   }
+  function calcularMeses(precio) {
+    // Eliminar comas del precio y convertir a número
+    var precioNumerico = parseFloat(precio.replace(/,/g, ''));
+    
+    var mensualidades = precioNumerico / 12;
+    
+    // Redondear a dos decimales y convertir de nuevo a string
+    var mensualidadesFormateadas = mensualidades.toFixed(2);
+    
+    console.log(mensualidadesFormateadas); // Mostrar el resultado formateado
+    
+    return mensualidadesFormateadas;
+}
+
 
   function formatearNumero(numero) {
     return numero.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

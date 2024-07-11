@@ -6,6 +6,7 @@ const adminController = AdminController;
 
 Adminrouter.post('/register', adminController.Registro);
 Adminrouter.get('/verificarSession', adminController.verificarSesion);
+Adminrouter.get('/obtenerAdmins', adminController.obtener);
 Adminrouter.post('/iniciarSession', adminController.IniciarSesion);
 
 export default Adminrouter;
